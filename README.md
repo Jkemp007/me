@@ -197,3 +197,6 @@ There should also be a step 6. ChatGPT did not know that I added a README.md fil
 - Remove all of the text in your README.md file.
 - Add your application name and add yourself as the Author.
 - Add credits for Eric Pogue, ChatGPT, and for this site where you utilized the template.
+
+## Justin K credit Notes:
+not entirely sure how to properly adjust this webpage, but I thought I would be sure to include my sources. In working on the previous assignment for Sprint-2, I had completed the assingment to the fullest, and used a few differnt online coding sources for help. I had used and reformatted code from GeeksforGeeks.com with creating square icons. I had alos gotten help from dwheeler.com in order to adjust the quotation marks to be "curly" and used a small bit of code with w3 schools.com to center my photo main image.
