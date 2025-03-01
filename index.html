@@ -38,6 +38,9 @@ video {
   margin-left: auto; 
   margin-right: auto ;
 }
+
+
+
     </style>
 
     <section class="container"> </section>
@@ -50,12 +53,31 @@ video {
         
 
 	<h1> Justin Kemp's Introduction Website </h1>
-	
-    
+
 
     <video src="It Was A Good Day by Ice Cube but with cute cats.mp4" autoplay muted controls></video>
 
-            <h1> Justin Kemp </h1>
+
+</style>
+<h1 class="clickable-text">Justin Kemp</h1>
+
+<script>
+    // Get the element
+    const textElement = document.querySelector('.clickable-text');
+
+    // Array of colors to cycle through
+    const colors = ['Green', 'black'];
+    let colorIndex = 0;
+
+    // Add a click event listener
+    textElement.addEventListener('click', () => {
+        // Change the text color to the next color in the array
+        textElement.style.color = colors[colorIndex];
+
+        // Move to the next color in the array
+        colorIndex = (colorIndex + 1) % colors.length; // Loop back to the start after the last color
+    });
+</script>
 
         <section class="lewis">
 			<h2>Year at Lewis: 1 </h2>
@@ -119,7 +141,5 @@ video {
             <h2>Contacts:</h2>
             <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTLHGLvbTSMQxVvKtsgwbPmXRnVNNFQNQDFkkzjPcRTQSXSQDjWGNcpnRFSCgdwMFwNrHL">justindkemp@lewisu.edu</a>
 	    <p> Discord: muddymuddog 
-
-
-
-</p>
+                <script>
+        const
