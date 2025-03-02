@@ -43,17 +43,15 @@ video {
 
     </style>
 
-    <section class="container"> </section>
+    <section class="container"> </section> code lines 46-65, were heavily assisted using ChatGPT and code lines 73-84 were assited via Deepseek Ai
         <section class="main-info"> Code help from w3 schools site
                 <section="viewport" content="width=device-width, initial-scale=1"> </section>
                     <style>
                         .rotatable {
-                            transition: transform 0.5s ease;
-                        }
-                    </style>
+                            transition: transform 0.5s ease; }
+                    </style> 
                 </head>
                     <img src="html2//me-300-by-300.jpg" alt="Justin K" class="rotatable" id="imageToRotate" />
-                
                     <script>
                         const image = document.getElementById('imageToRotate');
                         let rotation = 0; 
@@ -76,20 +74,12 @@ video {
 <h1 class="clickable-text">Justin Kemp</h1>
 
 <script>
-    // Get the element
     const textElement = document.querySelector('.clickable-text');
-
-    // Array of colors to cycle through
     const colors = ['Green', 'black'];
     let colorIndex = 0;
-
-    // Add a click event listener
     textElement.addEventListener('click', () => {
-        // Change the text color to the next color in the array
-        textElement.style.color = colors[colorIndex];
-
-        // Move to the next color in the array
-        colorIndex = (colorIndex + 1) % colors.length; // Loop back to the start after the last color
+        textElement.style.color = colors[colorIndex]; 
+        colorIndex = (colorIndex + 1) % colors.length; 
     });
 </script>
 
