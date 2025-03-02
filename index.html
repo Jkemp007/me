@@ -46,14 +46,28 @@ video {
     <section class="container"> </section>
         <section class="main-info"> Code help from w3 schools site
                 <section="viewport" content="width=device-width, initial-scale=1"> </section>
-    
+                    <style>
+                        .rotatable {
+                            transition: transform 0.5s ease;
+                        }
+                    </style>
+                </head>
+                    <img src="html2//me-300-by-300.jpg" alt="Justin K" class="rotatable" id="imageToRotate" />
+                
+                    <script>
+                        const image = document.getElementById('imageToRotate');
+                        let rotation = 0; 
+                
+                        image.addEventListener('click', () => {
+                            rotation += 180;
+                            image.style.transform = `rotate(${rotation}deg)`;
+                        });
+                    </script>
 
-        <img src="html2//me-300-by-300.jpg" alt="Justin K">
-    
-        
 
 	<h1> Justin Kemp's Introduction Website </h1>
 
+    
 
     <video src="It Was A Good Day by Ice Cube but with cute cats.mp4" autoplay muted controls></video>
 
@@ -142,4 +156,17 @@ video {
             <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTLHGLvbTSMQxVvKtsgwbPmXRnVNNFQNQDFkkzjPcRTQSXSQDjWGNcpnRFSCgdwMFwNrHL">justindkemp@lewisu.edu</a>
 	    <p> Discord: muddymuddog 
                 <script>
-        const
+        // Get the image element
+const image = document.getElementById('me-300-by-300.jpg');
+
+// Initialize a variable to track the rotation angle
+let angle = 0;
+
+// Add a click event listener to the image
+image.addEventListener('click', function() {
+    // Increase the rotation angle by 45 degrees each time the image is clicked
+    angle += 45;
+
+    // Apply the rotation using the transform property
+    image.style.transform = `rotate(${angle}45)`;
+});
